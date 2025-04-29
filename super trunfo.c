@@ -55,7 +55,7 @@ int main() {
     printf("Numero de pontos turisticos: %d\n", turisticos1);
     printf("Densidade populacional: %.2f\n", densidadep1);
     printf("PIB per capita: %.2f\n", pibper1);
-    printf("super poder:%.2f\n", super_poder1 = populacao1 + area1 + pibper1 + densidadep1);  //soma de dados armazenados
+    printf("super poder:%.2f\n", super_poder1 = populacao1 + area1 + pibper1 + pibper1 + turisticos1 + (1 / densidadep1));  //soma de dados armazenados
 
 
     // Exibição de dados da segunda carta
@@ -67,14 +67,14 @@ int main() {
     printf("Numero de pontos turisticos: %d\n", turisticos2);
     printf("Densidade populacional: %.2f\n", densidadep2);
     printf("PIB per capita: %.2f\n", pibper2);
-    printf("super poder:%.2f\n", super_poder2 = populacao2 + area2 + pibper2 + densidadep2); ////soma de dados armazenados
+    printf("super poder:%.2f\n", super_poder2 = populacao2 + area2 + pibper2 + pibper2 + turisticos2 + (1 / densidadep2));  //soma de dados armazenados
    
  
    //comparação de cartas
       printf("\n----comparacao de cartas----\n");
 
     printf("populacao: %s\n", (populacao1 > populacao2) ? "carta 1 venceu" : "carta 2 venceu" );
-    printf("Pib: %s\n", (pib1 > pib2) ? "carta 1 venceu" : "carta 2 venceu"); // ponto de interrogação e um operador para determinar se e verdadeiro ou falso
+    printf("Pib: %s\n", (pib1 > pib2) ? "carta 1 venceu" : "carta 2 venceu"); 
     printf("area: %s\n", (area1 > area2) ? "carta 1 venceu" : "carta 2 venceu");
     printf("numeros de pontos turisticos: %s\n", (turisticos1 > turisticos2) ? "carta 1 venceu" : "carta 2 venceu");
     printf(" densidade populacional: %s\n", (densidadep1 < densidadep2) ? "carta 1 venceu" : "carta 2 venceu");
